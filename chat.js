@@ -1,6 +1,6 @@
 function chat() {
-  let fetch = document.getElementById("output");
-  let command = document.getElementById("input").value;
+  var fetch = document.getElementById("output");
+  var command = document.getElementById("input").value;
 let res = ""
 switch(command) {
     case "hi!":
