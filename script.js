@@ -11,6 +11,7 @@ function eventfn(event){
     timeline();
     joke();
     genericcommands();
+    chat();
     exec();
     exec2();
 
