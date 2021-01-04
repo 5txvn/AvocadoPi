@@ -1,0 +1,44 @@
+body {
+  background-color: white;
+}
+input {
+  width: 100%;
+  background-color: white;
+  border-style: none;
+  border-width: 3px;
+  border-color: white;
+  color: green;
+  font-size: 17.5px;
+  margin-top: 5%;
+}
+::placeholder {
+  color: green;
+}
+#output {
+  color: #ff7d00;
+  margin-top: 7.5%;
+  font-size: 25px;
+  height: 30%;
+  border-width: 5px;
+  border-color: black;
+}
+h2 {
+  color: saddlebrown;
+  text-align: center;
+  font-size: 24px;
+}
+#version {
+  margin-top: 15%;
+   color: yellowgreen;
+   text-align: center;
+}
+#cdprefix {
+  background-color: black;;
+  color: green;
+}
+#tip {
+  text-align: center;
+  margin-top: 7.5%;
+  color: seagreen;
+  font-family: monospace;
+}
