@@ -14,6 +14,7 @@ function eventfn(event){
     chat();
     exec();
     exec2();
+    getemoji();
 
     res = output.innerHTML;
     console.log(res)

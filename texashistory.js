@@ -118,6 +118,54 @@ function timeline() {
         case (prefix + "1758"):
             res = "In March of 1758, over 2000 Comanches and allied other northern tribes staged a massive attack, burning down the Santa Cruz de San Sabá mission and killing all but one of the missionaries";
             break;
+        case (prefix + "1759"):
+            res = "In response to the destruction of Mission Santa Cruz de San Sabá, forces of 600 Spanish soldiers attacked the Whichita village on the Red River";
+            break;
+        case (prefix + "1762"):
+            res = "The Spanish officials broke their alliance with the Apache in favor of a Spanish-Comanche alliance";
+            break;
+        case (prefix + "1763"):
+            res = "The Alabama and Coushatta Tribes migrates to the area of Big Thicket in present-day Texas";
+            break;
+        case (prefix + "1771"):
+            res = "The Spanish made treaties with the Caddo, WHichita, and Tonkawa tribes";
+            break;
+        case (prefix + "1775"):
+            res = "The Smallpox epidemic arose and killed hundreds of thousands of Europeans and Native people in North America";
+            break;
+        case (prefix + "1778"):
+            res = "A new law was passed that all wild animals and unbranded livestock were property of the Spanish treasury";
+            break;
+        case (prefix + "1779"):
+            res = "El Mocho became a chief of the Tonkawa after a smallpox epidemic killed most of the tribe's elders";
+            break;
+        case (prefix + "1780"):
+            res = "After lifting the trade ban in 1779, the Spanish government reversed that decision because of hte surge of smuggling";
+            break;
+        case (prefix + "1785"):
+            res = "The Comanche accepted a peace deal with the Spanish";
+            break;
+        case (prefix + "1787"):
+            res = "Due to the San Fernando Memorial ruling, ranchers and missionaries planned a great round-up in 1787. La Bahia was the only mission to actually participate";
+            break;
+        case (prefix + "1795"):
+            res = "Ranchers were no longer required to pay the Mustang Fund taxes and were given one tax-free year to round up and brand livestock";
+            break;
+        case (prefix + "1800"):
+            res = "Cattle herds became severely depleted and ranchers turned their money-,aking efforts toward a new livestock source - wild mustangs";
+            break;
+        case (prefix + "1807"):
+            res = "Cherokees were first reported when a small band established a village on the Red River";
+            break;
+        case (prefix + "1820"):
+            res = "Moses Austin traveled to San Antonio and negotiated permission to settle 300 Anglo American families in Texas. Between this year and 1824, Mexico also won its independence and Steven F. Austin founds a new colony";
+            break;
+        case (prefix + "1821"):
+            res = "The Mexican territory of Tejas was opened to settlers";
+            break;
+        case (prefix + "1822"):
+            res = "Cherokee Chief Bowl sent diplomatic chief Richard Fields to Mexico to negotiate with the Mexican government for a grant to land occupied by Cherokees in East Texas";
+            break;
         //memes
         case ("$texas.history%meme"):
             res = "<img src='./texashistorymemes/texasmemes" + Math.floor(Math.random() * 40) + ".png' width='25%' height='25%' style='border-radius:20px;border-width:10px;border-color:black;'>";
