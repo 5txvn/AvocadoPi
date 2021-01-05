@@ -1,7 +1,7 @@
 function timeline() {
     var fetch = document.getElementById("output");
     var command = document.getElementById("input").value;
-    var prefix = "$texas%timeline%";
+    var prefix = "$texas.history%timeline%";
     var res = ""
     switch(command) {
         case (prefix + "14000.bce"):
@@ -119,7 +119,7 @@ function timeline() {
             res = "In March of 1758, over 2000 Comanches and allied other northern tribes staged a massive attack, burning down the Santa Cruz de San Sabá mission and killing all but one of the missionaries";
             break;
         //memes
-        case (prefix + "meme"):
+        case ("$texas.history%meme"):
             res = "<img src='./texashistorymemes/texasmemes" + Math.floor(Math.random() * 40) + ".png' width='25%' height='25%' style='border-radius:20px;border-width:10px;border-color:black;'>";
             break;
         default:
