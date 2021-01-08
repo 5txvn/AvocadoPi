@@ -16,6 +16,8 @@ function eventfn(event){
     exec2();
     getemoji();
     htmlterminal();
+    noun();
+    riddle();
 
     res = output.innerHTML;
     console.log(res)

@@ -23,6 +23,12 @@ switch(command) {
         document.getElementById("htmlterminal").style.height = "100px";
         res = "HTML Terminal is now off, type $html.terminal%on in the Command Line to turn it on"
         break;
+    case (prefix + "generate%face"):
+        res = "<iframe src='https://thispersondoesnotexist.com'>";
+        break;
+    case (prefix + "lines.of.code"):
+        res = "2546";
+        break;
     default:
         return;
 

@@ -307,6 +307,9 @@ function url() {
       case (prefix + "wowhead"):
           res = link1 + "wowhead.com" + link2 + "Wowhead" + link3;
           break;
+      case (prefix + "console"):
+          res = link1 + "https://AvocadoPiConsole.therealenny1.repl.co" + link2 + "Avocado Pi Console" + link3;
+          break;
       //url downloads    
       case ("$download%macosx"):
           res = link1 + "https://drive.google.com/file/d/1KIPpA2r5g7SvAvoVSXxnK4SKTSwi84Dr/view?usp=sharing" + link2 + "Download Avocado Pi for Mac OS X" + link3;
@@ -325,6 +328,9 @@ function url() {
           break;
       case ("$download%console%linux"):
           res = link1 + "https://drive.google.com/file/d/163oFa1Yn70N0a02ISyO3zWQbJATG5PyU/view?usp=sharing" + link2 + "Download Avocado Pi Console for Linux" + link3;
+          break;
+      case ("$src%github"):
+          res = link1 + "https://github.com/exoticchild/AvocadoPi" + link2 + "Avocado Pi Github Repo" + link3;
           break;
  }
  fetch.innerHTML = res;
