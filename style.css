@@ -10,13 +10,13 @@ input {
   color: green;
   font-size: 17.5px;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 ::placeholder {
   color: green;
 }
-#output {
+.output {
   color: #ff7d00;
-  margin-top: 7.5%;
   font-size: 25px;
   height: 30%;
   border-width: 5px;
@@ -28,7 +28,7 @@ h2 {
   font-size: 24px;
 }
 #version {
-  margin-top: 15%;
+  margin-top: 7.5%;
    color: yellowgreen;
    text-align: center;
 }
@@ -38,7 +38,17 @@ h2 {
 }
 #tip {
   text-align: center;
-  margin-top: 7.5%;
+  margin-top: 5%;
   color: seagreen;
   font-family: monospace;
+}
+#console {
+  overflow-y: auto;
+  margin-bottom: 5%;
+}
+#htmlterminal {
+  overflow-y: auto;
+  height: 100px;
+  border: 1px solid seagreen;
+  visibility: hidden;
 }

@@ -15,6 +15,7 @@ function eventfn(event){
     exec();
     exec2();
     getemoji();
+    htmlterminal();
 
     res = output.innerHTML;
     console.log(res)
@@ -24,6 +25,18 @@ function eventfn(event){
     return null;
   }
 } 
+var score = 0;
+function buttonfn() {
+  document.getElementById("score").innerHTML = score;
+  score++; 
+  if (score > 150) {
+  score += 2;
+  document.getElementById("level").innerHTML = "level 2";
+  } else if (score > 50) {
+    score += 1;
+  document.getElementById("level").innerHTML = "level 1";
+  }
+ }
 function exec() {
   let prefix = "$"
   let fetch = document.getElementById("output");
@@ -50,6 +63,9 @@ switch (command) {
     break;
   case (prefix + "current.protocol"):
     res = window.location.protocol;
+    break;
+  case (prefix + "cookie.clicker"):
+    res = "<button onclick='buttonfn()' style='width:225px;'><img src='cookie.jpg' height='25%' width='25%'></button>";
     break;
   default:
     return;

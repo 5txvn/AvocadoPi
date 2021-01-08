@@ -1,6 +1,6 @@
 function joke() {
     var prefix = "$"
-    var fetch = document.getElementById("output");
+    var fetch = get.id("output");
     var command = document.getElementById("input").value;
 var jokes = ["What do you call a dinosaur that is sleeping?<br>A dino-snore!", "What is fast, loud and crunchy?<br>A rocket chip!", "Why did the teddy bear say no to dessert?<br>Because she was stuffed.", "What has ears but cannot hear?<br>A cornfield.", 
 "What did the left eye say to the right eye?<br>Between us, something smells!", "What do you get when you cross a vampire and a snowman?<br>Frost bite!", "What did one plate say to the other plate?<br>Dinner is on me!", "Why did the student eat his homework?<br>Because the teacher told him it was a piece of cake!", 

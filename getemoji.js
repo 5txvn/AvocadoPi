@@ -258,6 +258,7 @@ switch(command) {
         break;
     default: 
     return;
+    //9729255630
 }
 fetch.innerHTML = res;
 }

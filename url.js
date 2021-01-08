@@ -317,6 +317,15 @@ function url() {
       case ("$download%linux"):
           res = link1 + "https://drive.google.com/file/d/15FuVq9QS5_zF_AQwk1u1DoCSzndUx0j0/view?usp=sharing" + link2 + "Download Avocado Pi for Linux" + link3;
           break;
+      case ("$download%console%macosx"):
+          res = link1 + "https://drive.google.com/file/d/11blqLONLv0EjpHmi02oDtbuTlyi0Hhrq/view?usp=sharing" + link2 + "Download Avocado Pi Console for Mac OS X" + link3;
+          break;
+      case ("$download%console%windows"):
+          res = link1 + "https://drive.google.com/file/d/17sybZpCDO5ZRgfy6CesRZNbYwXUBXdss/view?usp=sharing" + link2 + "Download Avocado Pi Console for Windows" + link3;
+          break;
+      case ("$download%console%linux"):
+          res = link1 + "https://drive.google.com/file/d/163oFa1Yn70N0a02ISyO3zWQbJATG5PyU/view?usp=sharing" + link2 + "Download Avocado Pi Console for Linux" + link3;
+          break;
  }
  fetch.innerHTML = res;
 }
