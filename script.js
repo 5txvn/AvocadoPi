@@ -15,9 +15,9 @@ function eventfn(event){
     exec();
     exec2();
     getemoji();
-    htmlterminal();
     noun();
     riddle();
+    mathpractice();
 
     res = output.innerHTML;
     console.log(res)
@@ -31,7 +31,9 @@ var score = 0;
 function buttonfn() {
   document.getElementById("score").innerHTML = score;
   score++; 
-  if (score > 150) {
+  if (score > 300) {
+    score +=3;
+  } else if (score > 150) {
   score += 2;
   document.getElementById("level").innerHTML = "level 2";
   } else if (score > 50) {

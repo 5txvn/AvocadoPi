@@ -13,16 +13,6 @@ switch(command) {
     case (prefix + "feedback"):
         window.open('https://forms.gle/PtDFHjdpwGKovrAH7');
         break;
-    case (prefix + "html.terminal%on"):
-        document.getElementById("htmlterminal").style.visibility = "visible";
-        document.getElementById("htmlterminal").style.height = "200px";
-        res = "HTML Terminal is now on, type $html.terminal%off in the Command Line to turn it off"
-        break;
-    case (prefix + "html.terminal%off"):
-        document.getElementById("htmlterminal").style.visibility = "hidden";
-        document.getElementById("htmlterminal").style.height = "100px";
-        res = "HTML Terminal is now off, type $html.terminal%on in the Command Line to turn it on"
-        break;
     case (prefix + "generate%face"):
         res = "<iframe src='https://thispersondoesnotexist.com'>";
         break;
