@@ -300,9 +300,7 @@ function urlopen() {
           window.open("https://ign.com")
           break;
       case (prefix + "wowhead"):
-          window.open("https://wowhead.com")
+          window.open("/melon/index.php")
           break;
  }
  }
- 
- 

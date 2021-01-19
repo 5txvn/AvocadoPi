@@ -5,6 +5,7 @@
     <link rel="shortcut icon" href="avocado.ico" type="image/x-icon">
     <title>2 Digit Addition Practice</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
   <h1 id="questiontext">Problem:</h1>
 <p id="questionp"><span id="firstnumber"></span><span> + </span><span id="secondnumber"></span></p>
@@ -17,6 +18,8 @@
   document.addEventListener("keydown", function(event) {
   if (event.keyCode == 13) {
      buttonfn();
+   } else if (event.keyCode == 220) {
+     window.history.back()
    }
 });
 var time = 0;

@@ -18,9 +18,9 @@ function eventfn(event){
     noun();
     riddle();
     mathpractice();
+    periodictable();
 
     res = output.innerHTML;
-    console.log(res)
     // If there still isnt anything in the output set it to the error message
     if (!res) output.innerHTML = "Sorry, invalid command" 
   } else {
@@ -41,6 +41,7 @@ function buttonfn() {
   document.getElementById("level").innerHTML = "level 1";
   }
  }
+ var createtxt = "<php ?>"
 function exec() {
   let prefix = "$"
   let fetch = document.getElementById("output");
@@ -172,8 +173,14 @@ function exec2() {
   } else if (command.includes(prefix + "sticky")) {
     fetch.innerHTML = eval(command.slice(1, 1000000))
   }
+  //apps
+  else if (command === "$start%melon") {
+    window.open("./melon/index.php")
+  }
   //run
   else if (command.includes(prefix + "run.")) {
     fetch.innerHTML = eval(command.slice(5, 1000000));
+  } else if (command.includes(prefix + "create.file%txt%")) {
+    $("body").append('<?php $fp=fopen("txtfiles/test.txt", "w"); fwrite($fp, "this is a test"); fclose($fp); ?>')
   }
 }

@@ -186,7 +186,7 @@ function timeline() {
             break;
         //memes
         case ("$texas.history%meme"):
-            res = "<img src='./texashistorymemes/texasmemes" + Math.floor(Math.random() * 40) + ".png' width='35%' height='35%' style='border-radius:20px;border-width:10px;border-color:black;'>";
+            res = "<img src='https://filestorage1.therealenny1.repl.co/texasmemes" + Math.floor(Math.random() * 40) + ".png' width='35%' height='35%' style='border-radius:20px;border-width:10px;border-color:black;'>";
             break;
         default:
             return;

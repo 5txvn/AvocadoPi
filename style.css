@@ -1,16 +1,20 @@
 body {
-  background-color: white;
+  background-color: honeydew;
 }
 input {
   width: 85%;
-  background-color: white;
+  background-color: honeydew;
   font-size: 18px;
   border-style: none;
-  border-color: white;
+  border-color: honeydew;
+  color: limegreen;
+}
+input:focus {
+    outline-width: 0;
 }
 input:active {
   border-style: "none";
-  border-color: white;
+  border-color: honeydew;
 }
 ::placeholder {
   color: green;
@@ -19,10 +23,10 @@ input:active {
   color: limegreen;
   font-size: 18px;
   border-width: 5px;
-  border-color: black;
+  border-color: limegreen;
 }
 #title {
-  color: forestgreen;
+  color: limegreen;
   font-size: 18px;
 }
 #version {
@@ -38,4 +42,5 @@ input:active {
 #cdprefix {
   font-size: 18px;
   width: 15%;
+  color: limegreen;
 }
