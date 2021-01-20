@@ -152,4 +152,50 @@ else if(command===(prefix+"yellow.heart")) {fetch.innerHTML="💛"}
 else if(command===(prefix+"green.heart")) {fetch.innerHTML="💚"}
 else if(command===(prefix+"blue.heart")) {fetch.innerHTML="💙"}
 else if(command===(prefix+"purple.heart")) {fetch.innerHTML="💜"}
+else if(command===(prefix+"brown.heart")) {fetch.innerHTML="🤎"}
+else if(command===(prefix+"black.heart")) {fetch.innerHTML="🖤"}
+else if(command===(prefix+"white.heart")) {fetch.innerHTML="🤍"}
+else if(command===(prefix+"hundred.points")) {fetch.innerHTML="💯"}
+else if(command===(prefix+"anger.symbol")) {fetch.innerHTML="💢"}
+else if(command===(prefix+"collision")) {fetch.innerHTML="💥"}
+else if(command===(prefix+"dizzy")) {fetch.innerHTML="💫"}
+else if(command===(prefix+"sweat.droplets")) {fetch.innerHTML="💦"}
+else if(command===(prefix+"dashing.away")) {fetch.innerHTML="💨"}
+else if(command===(prefix+"hole")) {fetch.innerHTML="🕳"}
+else if(command===(prefix+"bomb")) {fetch.innerHTML="💣"}
+else if(command===(prefix+"speech.balloon")) {fetch.innerHTML="💬"}
+else if(command===(prefix+"eye.in.speech.bubble")) {fetch.innerHTML="👁️‍🗨️"}
+else if(command===(prefix+"left.speech.bubble")) {fetch.innerHTML="🗨"}
+else if(command===(prefix+"right.anger.bubble")) {fetch.innerHTML="🗯"}
+else if(command===(prefix+"thought.balloon")) {fetch.innerHTML="💭"}
+else if(command===(prefix+"zzz")) {fetch.innerHTML="💤"}
+//hand-fingers-open
+else if(command===(prefix+"waving.hand")) {fetch.innerHTML="👋"}
+else if(command===(prefix+"raised.back.of.hand")) {fetch.innerHTML="🤚"}
+else if(command===(prefix+"hand.with.fingers.splayed")) {fetch.innerHTML="🖐"}
+else if(command===(prefix+"raised.hand")) {fetch.innerHTML="✋"}
+else if(command===(prefix+"vulcan.salute")) {fetch.innerHTML="🖖"}
+//hand-fingers-partial
+else if(command===(prefix+"ok.hand")) {fetch.innerHTML="👌"}
+else if(command===(prefix+"pinched.fingers")) {fetch.innerHTML="🤌"}
+else if(command===(prefix+"pinching.hand")) {fetch.innerHTML="🤏"}
+else if(command===(prefix+"victory.hand")) {fetch.innerHTML="✌"}
+else if(command===(prefix+"crossed.fingers")) {fetch.innerHTML="🤞"}
+else if(command===(prefix+"love.you.gesture")) {fetch.innerHTML="🤟"}
+else if(command===(prefix+"sign.of.the.horns")) {fetch.innerHTML="🤘"}
+else if(command===(prefix+"call.me.hand")) {fetch.innerHTML="🤙"}
+//hand-single-finger
+else if(command===(prefix+"backhand.index.pointing.left")) {fetch.innerHTML="👈"}
+else if(command===(prefix+"backhand.index.pointing.right")) {fetch.innerHTML="👉"}
+else if(command===(prefix+"backhand.index.pointing.up")) {fetch.innerHTML="👆"}
+else if(command===(prefix+"middle.finger")) {fetch.innerHTML="🖕"}
+else if(command===(prefix+"backhand.index.pointing.down")) {fetch.innerHTML="👇"}
+else if(command===(prefix+"index.pointing.up")) {fetch.innerHTML="☝"}
+//hand-fingers-closed
+else if(command===(prefix+"thumbs.up")) {fetch.innerHTML="👍"}
+else if(command===(prefix+"thumbs.down")) {fetch.innerHTML="👎"}
+else if(command===(prefix+"raised.fist")) {fetch.innerHTML="✊"}
+else if(command===(prefix+"oncoming.fist")) {fetch.innerHTML="👊"}
+else if(command===(prefix+"left.facing.fist")) {fetch.innerHTML="🤛"}
+else if(command===(prefix+"right.facing.fist")) {fetch.innerHTML="🤜"}
 }
