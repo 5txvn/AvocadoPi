@@ -198,4 +198,39 @@ else if(command===(prefix+"raised.fist")) {fetch.innerHTML="✊"}
 else if(command===(prefix+"oncoming.fist")) {fetch.innerHTML="👊"}
 else if(command===(prefix+"left.facing.fist")) {fetch.innerHTML="🤛"}
 else if(command===(prefix+"right.facing.fist")) {fetch.innerHTML="🤜"}
+//hands
+else if(command===(prefix+"clapping.hands")) {fetch.innerHTML="👏"}
+else if(command===(prefix+"raising.hands")) {fetch.innerHTML="🙌"}
+else if(command===(prefix+"open.hands")) {fetch.innerHTML="👐"}
+else if(command===(prefix+"palms.up.together")) {fetch.innerHTML="🤲"}
+else if(command===(prefix+"handshake")) {fetch.innerHTML="🤝"}
+else if(command===(prefix+"folded.hands")) {fetch.innerHTML="🙏"}
+//hand-prop
+else if(command===(prefix+"writing.hand")) {fetch.innerHTML="✍"}
+else if(command===(prefix+"nail.polish")) {fetch.innerHTML="💅"}
+else if(command===(prefix+"selfie")) {fetch.innerHTML="🤳"}
+//body-parts
+else if(command===(prefix+"flexed.biceps")) {fetch.innerHTML="💪"}
+else if(command===(prefix+"mechanical.arm")) {fetch.innerHTML="🦾"}
+else if(command===(prefix+"mechanical.leg")) {fetch.innerHTML="🦿"}
+else if(command===(prefix+"leg")) {fetch.innerHTML="🦵"}
+else if(command===(prefix+"foot")) {fetch.innerHTML="🦶"}
+else if(command===(prefix+"ear")) {fetch.innerHTML="👂"}
+else if(command===(prefix+"ear.with.hearing.aid")) {fetch.innerHTML="🦻"}
+else if(command===(prefix+"nose")) {fetch.innerHTML="👃"}
+else if(command===(prefix+"brain")) {fetch.innerHTML="🧠"}
+else if(command===(prefix+"anatomical.heart")) {fetch.innerHTML="🫀"}
+else if(command===(prefix+"lungs")) {fetch.innerHTML="🫁"}
+else if(command===(prefix+"tooth")) {fetch.innerHTML="🦷"}
+else if(command===(prefix+"bone")) {fetch.innerHTML="🦴"}
+else if(command===(prefix+"eyes")) {fetch.innerHTML="👀"}
+else if(command===(prefix+"eye")) {fetch.innerHTML="👁"}
+else if(command===(prefix+"tongue")) {fetch.innerHTML="👅"}
+else if(command===(prefix+"mouth")) {fetch.innerHTML="👄"}
+//person
+else if(command===(prefix+"baby")) {fetch.innerHTML="👶"}
+else if(command===(prefix+"child")) {fetch.innerHTML="🧒"}
+else if(command===(prefix+"boy")) {fetch.innerHTML="👦"}
+else if(command===(prefix+"girl")) {fetch.innerHTML="👧"}
+else if(command===(prefix+"person")) {fetch.innerHTML="🧑"}
 }

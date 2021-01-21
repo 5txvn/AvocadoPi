@@ -1,3 +1,4 @@
+//https://codepen.io/michaelg22/pen/QKNRww
 function eventfn(event){
   if (event.keyCode === 13) {
     // Reset output box
@@ -19,6 +20,7 @@ function eventfn(event){
     riddle();
     mathpractice();
     periodictable();
+    memes();
 
     res = output.innerHTML;
     // If there still isnt anything in the output set it to the error message
