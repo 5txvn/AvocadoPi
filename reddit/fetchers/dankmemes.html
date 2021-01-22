@@ -1,7 +1,30 @@
 <button onclick='render(memes)'>Generate Meme</button>
-<img src="" alt="" width="50%;">
+<img src="" alt="">
+<style>
+   img {
+  width: 25%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%)
+}
+button {
+  cursor: pointer;
+  background: lime;
+  color: white;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  padding: 10px 40px;
+  z-index: 900;
+} 
+</style>
 <script>
-    fetch("https://www.reddit.com/r/dankmemes/.json?&show=all&limit=300")
+    fetch('https://www.reddit.com/r/dankmemes.json')
 .then(res => res.json())
 .then(res => res.data.children)
 .then(res => res.map(post => ({
@@ -22,11 +45,3 @@ function render(res){
     index = index < memes.length ? ++index : 0
 }
 </script>
-<style>
-button {
-  cursor: pointer;
-  background: #E8555E;
-  color: white;
-  border-radius: 5px;
-}
-</style>

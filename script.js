@@ -20,7 +20,7 @@ function eventfn(event){
     riddle();
     mathpractice();
     periodictable();
-    memes();
+    reddit();
 
     res = output.innerHTML;
     // If there still isnt anything in the output set it to the error message
