@@ -23,12 +23,12 @@
    }
 });
 var time = 0;
-var getscore = window.localStorage.getItem("score");
+var getscore = window.localStorage.getItem("2-digit-addition-score");
 var scorelength = getscore.length;
-var currentscore = window.localStorage.getItem("score");
-var getstreak = window.localStorage.getItem("streak");
+var currentscore = window.localStorage.getItem("2-digit-addition-score");
+var getstreak = window.localStorage.getItem("2-digit-addition-streak");
 var streaklength = getstreak.length;
-var currentstreak = window.localStorage.getItem("streak");
+var currentstreak = window.localStorage.getItem("2-digit-addition-streak");
 document.getElementById("score").innerHTML = "Current Score: " + scorelength;
 document.getElementById("streak").innerHTML = "Current Streak: " + streaklength;
   setInterval(function(){
@@ -46,24 +46,24 @@ function buttonfn() {
   var inputv = document.getElementById("inputtest").value;
 if (inputv === total) {
   var addedscore = currentscore += 1;
-  window.localStorage.removeItem("score");
-  window.localStorage.setItem("score", addedscore);
+  window.localStorage.removeItem("2-digit-addition-score");
+  window.localStorage.setItem("2-digit-addition-score", addedscore);
   var addedstreak = currentstreak += 1;
-  window.localStorage.removeItem("streak");
-  window.localStorage.setItem("streak", addedstreak);
+  window.localStorage.removeItem("2-digit-addition-streak");
+  window.localStorage.setItem("2-digit-addition-streak", addedstreak);
   window.location.reload()
 } else if (inputv === "$score%clear") {
-  window.localStorage.removeItem("score");
-  window.localStorage.setItem("score", "");
+  window.localStorage.removeItem("2-digit-addition-score");
+  window.localStorage.setItem("2-digit-addition-score", "");
   window.location.reload();
 } else if (inputv === "$streak%clear") {
-  window.localStorage.removeItem("streak");
-  window.localStorage.setItem("streak", "");
+  window.localStorage.removeItem("2-digit-addition-streak");
+  window.localStorage.setItem("2-digit-addition-streak", "");
   window.location.reload();
 } else {
 alert("Your Answer is incorrect, streak lost!");
-window.localStorage.removeItem("streak");
-window.localStorage.setItem("streak", "");
+window.localStorage.removeItem("2-digit-addition-streak");
+window.localStorage.setItem("2-digit-addition-streak", "");
 window.location.reload();
 };
 }

@@ -3,11 +3,12 @@
 <body>
   <head>
     <link rel="shortcut icon" href="avocado.ico" type="image/x-icon">
-    <title>3 Digit Addition Practice</title>
+    <title>Area of a Circle</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
   <h1 id="questiontext">Problem:</h1>
-<p id="questionp"><span id="firstnumber"></span><span> + </span><span id="secondnumber"></span></p>
+<div style="text-align:center;"><p id="questionp"><span id="question"></span></p></div>
 <br><div style="text-align:center;"><input id="inputtest" placeholder="Enter answer here"></div>
 <br><div style="text-align:center;height:20%;"><button id="checkbtn" class="w3-button w3-round-large" onclick="buttonfn()">Check answer</button></div>
 <p style="margin:auto;border-width:5px;border-color:darkseagreen;border-style:double;border-radius:15px;width:50%;padding:10px;margin-top:30px;text-align:center;"><span class="timespan">Time: </span><span id="time" class="timespan"></span></p>
@@ -17,50 +18,60 @@
   document.addEventListener("keydown", function(event) {
   if (event.keyCode == 13) {
      buttonfn();
+   } else if (event.keyCode == 220) {
+     window.history.back()
    }
 });
+if (localStorage.getItem("circle-area-radius-score") === null) {
+    localStorage.setItem("circle-area-radius-score", "")
+} else {
+    null
+}
+if (localStorage.getItem("circle-area-radius-streak") === null) {
+    localStorage.setItem("circle-area-radius-streak", "")
+} else {
+    null
+}
 var time = 0;
-var getscore = window.localStorage.getItem("score");
+var getscore = window.localStorage.getItem("circle-area-radius-score");
 var scorelength = getscore.length;
-var currentscore = window.localStorage.getItem("score");
-var getstreak = window.localStorage.getItem("streak");
+var currentscore = window.localStorage.getItem("circle-area-radius-score");
+var getstreak = window.localStorage.getItem("circle-area-radius-streak");
 var streaklength = getstreak.length;
-var currentstreak = window.localStorage.getItem("streak");
+var currentstreak = window.localStorage.getItem("circle-area-radius-streak");
 document.getElementById("score").innerHTML = "Current Score: " + scorelength;
 document.getElementById("streak").innerHTML = "Current Streak: " + streaklength;
   setInterval(function(){
 time+=.250;
 document.getElementById("time").innerHTML = time;
 }, 250)
-var numbero = Math.floor(Math.random() * 900 + 100);
-var numbers = Math.floor(Math.random() * 900 + 100);
-document.getElementById("firstnumber").innerHTML = numbero;
-document.getElementById("secondnumber").innerHTML = numbers;
-var total1 = numbero + numbers;
+var numbero = Math.floor(Math.random() * 30);
+document.getElementById("question").innerHTML = "What is the area of a circle with a radius of " + numbero + "? (Use 3.14 as estimation)"
+var total1 = numbero * numbero * 3.14
 var total = total1.toString();
 function buttonfn() {
   clearInterval();
   var inputv = document.getElementById("inputtest").value;
 if (inputv === total) {
   var addedscore = currentscore += 1;
-  window.localStorage.removeItem("score");
-  window.localStorage.setItem("score", addedscore);
+  window.localStorage.removeItem("circle-area-radius-score");
+  window.localStorage.setItem("circle-area-radius-score", addedscore);
   var addedstreak = currentstreak += 1;
-  window.localStorage.removeItem("streak");
-  window.localStorage.setItem("streak", addedstreak);
+  window.localStorage.removeItem("circle-area-radius-streak");
+  window.localStorage.setItem("circle-area-radius-streak", addedstreak);
   window.location.reload()
 } else if (inputv === "$score%clear") {
-  window.localStorage.removeItem("score");
-  window.localStorage.setItem("score", "");
+  window.localStorage.removeItem("circle-area-radius-score");
+  window.localStorage.setItem("circle-area-radius-score", "");
   window.location.reload();
 } else if (inputv === "$streak%clear") {
-  window.localStorage.removeItem("streak");
-  window.localStorage.setItem("streak", "");
+  window.localStorage.removeItem("circle-area-radius-streak");
+  window.localStorage.setItem("circle-area-radius-streak", "");
   window.location.reload();
 } else {
 alert("Your Answer is incorrect, streak lost!");
-window.localStorage.removeItem("streak");
-window.localStorage.setItem("streak", "");
+window.localStorage.removeItem("circle-area-radius-streak");
+window.localStorage.setItem("circle-area-radius-streak", "");
 window.location.reload();
 };
 }
@@ -95,8 +106,7 @@ window.location.reload();
     border-width: 3px;
     border-color: #a7c957;
     border-radius: 10px;
-    width: 300px;
-    margin: auto;
+    display:inline-block;
     margin-top: 7.5%
   }
   #checkbtn {
