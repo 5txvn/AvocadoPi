@@ -1,0 +1,53 @@
+body {
+    background-color:#6a994e;
+    color: white;
+  }
+  #inputtest {
+    text-align:center;
+    width:450px;
+    height: 20%;
+    font-size:25px;
+    background-color:#386641;
+    border-radius:20px;
+    border-style:none;
+    color:white;
+    margin-top: 5%;
+  }
+  #questiontext {
+    font-size:30px;
+    text-align:center;
+    color: #f2e8cf;
+  }
+  #questionp {
+    font-size:20px;
+    text-align:center;
+    margin-top:3%;
+    color: #a7c957;
+    border-style: inset;
+    border-width: 3px;
+    border-color: #a7c957;
+    border-radius: 10px;
+    display:inline-block;
+    margin-top: 7.5%;
+    padding: 20px;
+  }
+  #checkbtn {
+    margin-top:4%;
+    background-color:#bc4749;
+  }
+  .timespan {
+    font-size:17.5px;
+    margin-top:5%;
+  }
+  ::placeholder {
+    color:white;
+  }
+  .scorestreak {
+    text-align: center;
+    font-size: 15px;
+    border-style: inset;
+    border-width: 3px;
+    border-color: seagreen;
+    border-radius: 10px;
+    width: 250px;
+  }
